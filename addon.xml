@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.douyutv"
+  name="斗鱼直播"
+  version="1.0.1"
+  provider-name="Big.Uncle @ http://weibo.com/unclepur/">
+  <extension point="xbmc.python.pluginsource" library="douyutv.py">
+  <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>斗鱼直播</summary>
+    <summary lang="zh">斗鱼直播插件</summary>
+    <description>Douyu TV</description>
+    <description lang="zh">斗鱼直播插件</description>
+    <disclaimer>本插件为学习研究所用，请勿用于商业用途。</disclaimer>
+  </extension>
+</addon>
