@@ -1,8 +1,13 @@
 斗鱼直播 for XBMC
 ================
 
-当前版本:1.0.1
+当前版本:1.0.5
 ----------------
+
+更新内容
+----------------
+1. 增加在线直播列表
+
 
 截图
 ----------------
@@ -20,6 +25,4 @@
 ----------------
 1. v1.0.1-2014-08-31 [下载](https://github.com/HexPang/DouyuLiveForXBMC/archive/v1.0.1.zip)
 
-更新内容
-----------------
-1. 暂无
+2. v1.0.5-2014-08-31 [下载](https://github.com/HexPang/DouyuLiveForXBMC/archive/plugin.video.douyutv-1.0.5.zip)
