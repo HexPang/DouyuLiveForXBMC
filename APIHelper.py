@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+# 斗鱼接口
 import urllib2
 import json
 
@@ -13,12 +15,11 @@ class APIHelper:
         if param != None:
             for k, v in enumerate(param):
                 reqUrl = reqUrl + "&" + v + "=" + param[v]
-        print(reqUrl)
         try:
-            response = urllib2.urlopen(reqUrl).read()
+            response = urllib2.urlopen(reqUrl, timeout=10).read()
+            jsonObject = json.loads(response)
+            data = jsonObject["data"]
+            return data
         except Exception, e:
-            print "Error:" + e
-        # print response
-        jsonObject = json.loads(response)
-        data = jsonObject["data"]
-        return data
+            print "Error:" + str(e)
+        return None
