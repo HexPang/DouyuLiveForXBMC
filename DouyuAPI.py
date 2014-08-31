@@ -15,3 +15,6 @@ class DouyuAPI(APIHelper.APIHelper):
 
     def loadRoom(self,roomId):
         return self.request("room/" + roomId)
+
+    def loadLive(self,offset=0,limit=10):
+        return self.request("live", {"offset": str(offset), "limit": str(limit)})
