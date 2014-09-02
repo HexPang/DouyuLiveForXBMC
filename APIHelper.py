@@ -9,9 +9,8 @@ class APIHelper:
         self.baseUrl = "http://api.douyutv.com/api/client"
         self.client_sys = "android"
 
-    def request(self, action, param=None):
-        reqUrl = self.baseUrl + "/" + action
-        reqUrl = reqUrl + "?" + "client_sys=" + self.client_sys
+    def request(self, url, param=None):
+        reqUrl = url
         if param != None:
             for k, v in enumerate(param):
                 reqUrl = reqUrl + "&" + v + "=" + param[v]

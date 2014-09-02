@@ -6,6 +6,13 @@ import APIHelper
 class DouyuAPI(APIHelper.APIHelper):
     def __init__(self):
         APIHelper.APIHelper.__init__(self)
+        self.baseUrl = "http://api.douyutv.com/api/client"
+        self.client_sys = "android"
+
+    def request(self, action, param=None):
+        reqUrl = self.baseUrl + "/" + action
+        reqUrl = reqUrl + "?" + "client_sys=" + self.client_sys
+        return APIHelper.APIHelper.request(self, reqUrl, param)
 
     def loadCategory(self):
         return self.request("game")
