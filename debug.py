@@ -1,7 +1,8 @@
-import DouyuAPI
+from YYTvAPI import YYTvAPI
 
 __author__ = 'hexpang'
-helper = DouyuAPI.DouyuAPI()
-result = helper.loadCategory() #helper.request("login",{"username":"test","password":"test","type":"md5"})
-print result
+helper = YYTvAPI()
+result = helper.loadCategory()
+for category in result:
+    print category
 print "Done"
