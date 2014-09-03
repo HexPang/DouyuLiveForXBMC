@@ -6,6 +6,7 @@ import urllib
 import DouyuAPI
 import xbmcplugin
 import xbmcgui
+import xbmc
 import urlparse
 
 base_url = sys.argv[0]
@@ -55,7 +56,6 @@ elif action[0] == "category":
         listitem = xbmcgui.ListItem(label="下一页", path=url)
         xbmcplugin.addDirectoryItem(handle, url, listitem, isFolder=True)
         xbmcplugin.endOfDirectory(handle)
-
     except Exception as e:
         xbmcgui.Dialog().ok("ERROR", str(e[0]))
 elif action[0] == "play":
